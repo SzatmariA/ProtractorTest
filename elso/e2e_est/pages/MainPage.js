@@ -11,7 +11,12 @@ export class MainPage {
 
   checkThePageisOpened() {
     let pageElement = browser.getTitle();
+	
     return pageElement;
+  }
+  
+  clickTheX(){
+	  element(by.css('#bs-example-navbar-collapse-1 > div.top-components.clearfix.hidden-xs > div.component-language-toggle.navbar-right > ul > li.dropdown.open > ul > a > i')).click();
   }
 
   getLogo() {

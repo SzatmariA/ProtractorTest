@@ -12,6 +12,7 @@ export class MainStep  {
 	iCanSeeTheMcDonaldsPageIsOpened() {
 		let title = mainPage.checkThePageisOpened();
 		expect(title).to.eventually.equal("McDonald's: Burgers, Fries & More. Quality Ingredients.");
+		mainPage.clickTheX();
 	}
 	
 	iCanSeeTheBurgersPageIsOpened() {
